@@ -15,3 +15,8 @@ do
   git log --format=%aD $f | tail -1 | grep "2016\|2017"
 
 done
+
+
+to remove old kernel images from a machine:
+
+dpkg --list | grep linux-image | awk '{ print $2 }' | sort -V | sed -n '/'`uname -r`'/q;p' | xargs  apt-get -y purge
