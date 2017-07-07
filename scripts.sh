@@ -20,3 +20,13 @@ done
 to remove old kernel images from a machine:
 
 dpkg --list | grep linux-image | awk '{ print $2 }' | sort -V | sed -n '/'`uname -r`'/q;p' | xargs  apt-get -y purge
+
+
+to get ipv6 address for a hostname
+
+dig  google.com AAAA +short
+
+toget ipv4 address for a hostname
+
+dig  google.com A +short
+
