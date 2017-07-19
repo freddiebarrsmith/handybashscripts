@@ -1,1 +1,20 @@
 
+#https://www.gnupg.org/documentation/manpage.html
+
+
+-b, --detach-sign
+
+     Make a detached signature.
+-a, --armor
+
+    Create ASCII armored output.
+
+
+-s, --sign
+
+    Make a signature. This command may be combined with --encrypt.
+
+
+ gpg -abs -o Release.gpg Release
+ 
+ #signing a repo after creating it
