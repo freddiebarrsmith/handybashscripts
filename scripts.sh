@@ -41,3 +41,4 @@ done < domainnames.txt
 
 
 
+exim -bvs JPMorgan_Chase@jpmcstaffing.com
