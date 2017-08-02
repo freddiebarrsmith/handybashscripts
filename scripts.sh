@@ -39,6 +39,14 @@ do
         echo "rekt"
 done < domainnames.txt
 
-
+this finds out whether a domain will pass validation, you can run it from a mailserver
 
 exim -bvs JPMorgan_Chase@jpmcstaffing.com
+
+the following command basically runs watch to grep for a specific service, this means it is constantly refreshing every 1 second
+if you dont have the apostrophes then it will return blank :S
+
+watch -n1 'netstat -autpn | grep pgbouncer'
+
+
+
