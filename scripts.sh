@@ -48,5 +48,7 @@ if you dont have the apostrophes then it will return blank :S
 
 watch -n1 'netstat -autpn | grep pgbouncer'
 
+seeing connections to a particular ip:
 
+ watch -n1 'netstat -autpn | grep 129.67.1.223'
 
