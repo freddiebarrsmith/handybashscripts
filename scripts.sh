@@ -52,3 +52,12 @@ seeing connections to a particular ip:
 
  watch -n1 'netstat -autpn | grep 129.67.1.223'
 
+find the execcing directory for a process:
+
+readlink -f /proc/25125/exe
+
+more reliable:
+
+ps x | grep 25125
+
+
